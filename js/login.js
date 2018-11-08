@@ -16,7 +16,7 @@ function login() {
  
     } else {
  
-        alert("please enter the right username or password")
+        alert("please enter the correct username or password")
  
     }
 }
