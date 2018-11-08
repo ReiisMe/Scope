@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>register.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="../js/register.js"></script>
+
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+ 
+  </head>
+  
+  <body>
+
+    <h3 align="center">Register Here</h3>
+    <form name="user" action="#" method="post">
+    	<table  align="center">
+    		<tr>
+    			<td>Username</td>
+    			<td>
+    				<input type="text" name="username" />
+				</td>
+    		</tr>
+    		<tr>
+    			<td>Password</td>
+    			<td>
+    				<input type="password"/>
+				</td>
+            </tr>
+            <tr>    
+                <td>re-enter password</td>
+                <td>
+                    <input type = "password">
+                </td>
+            </tr>
+    		
+    		<tr>
+    			<td>Gender</td>
+    			<td>
+    				<input type="radio" name="name" checked="checked"/>male
+    				<input type="radio" name="name"/>female
+				</td>
+    		</tr>
+    		<tr>
+    			<td>Search Preference</td>
+    			<td>
+    				<input type="checkbox" name="food" checked="checked"/>food
+    				<input type="checkbox" name="music"/>music
+    				<input type="checkbox" name="fashion"/>fashion
+				</td>
+    		</tr>
+    		<tr>
+    			<td>Email</td>
+    			<td>
+    				<input type="text" name="emall" />
+				</td>
+    		</tr>
+    		<tr>
+    			<td>Phone number</td>
+    			<td>
+    				<input type="text" name="phone" />
+				</td>
+    		</tr>
+    		<tr>
+    			<td>Upload profile photo</td>
+    			<td>
+    				<input type="file" name="file" />
+				</td>
+    		</tr>
+    		
+    		<tr>
+    			<td></td>
+    			<td>
+    				<input type="reset" name="submit" value="register" onclick="register();"/>
+    				<input type="reset" name="cancel" value="cancel"/>
+				</td>
+    		</tr>
+    		
+    	</table>
+    </form>	
+  </body>
+</html>

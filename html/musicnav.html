@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Scope.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="../css/musicnav.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+			<h1>Music Scope.</h1>
+	</div>
+
+	<ul>
+	  <li><a class="active" href="../index.html">Home</a></li>
+	  <li><a href="#HotNow">Hot Now</a></li>
+	  <li><a href="#UpandComing">Up and Coming</a></li>
+	  <li><a href="#Pop">Pop</a></li>
+		<li><a href="#Rap">Rap</a></li>
+	</ul>
+
+
+			<div class="columna">
+				<h4 id="Top10">Top 10 Songs</h4>
+					<table id="t01" align = "center">
+									  <tr>
+									    <th>Song</th>
+									    <th>Artist</th>
+									  </tr>
+									  <tr>
+									    <td>1. Sicko Mode</td>
+									    <td>Travis Scott</td>
+
+									  </tr>
+									  <tr>
+									    <td>2. Lucid Dreams</td>
+									    <td>Juice WRLD</td>
+
+									  </tr>
+									  <tr>
+									    <td>3. Happier</td>
+									    <td>Marshmello</td>
+
+									  </tr>
+										<tr>
+											<td>4. Better Now</td>
+											<td>Post Malone</td>
+
+										</tr>
+										<tr>
+											<td>5. ZEZE</td>
+											<td>Kodak Black</td>
+
+										</tr>
+										<tr>
+												<td>6. Youngblood</td>
+												<td>5SOS</td>
+
+										</tr>
+										<tr>
+												<td>7. Drip Too Hard</td>
+												<td>Lil Baby and Gunna</td>
+
+										</tr>
+										<tr>
+												<td>8. Sunflower</td>
+												<td>Post Malone</td>
+
+										</tr>
+										<tr>
+												<td>9. Love Lies</td>
+												<td>Khalid</td>
+
+										</tr>
+										<tr>
+												<td>10. Mooo!</td>
+												<td>Doja Cat</td>
+
+										</tr>
+									<audio src="lofihype.mp3" controls><p>failed to load</p></audio>
+									</table>
+			</div>
+			<div class="columnb">
+				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search what's trending" title="Type in a name">
+
+				<ul id="myUL">
+					<li><a href="#">Post Malone</a></li>
+					<li><a href="#">Harry Styles</a></li>
+					<li><a href="#">Kanye</a></li>
+					<li><a href="#">Brockhampton</a></li>
+					<li><a href="#">Cardi B</a></li>
+					<li><a href="#">Juice WRLD</a></li>
+				</ul>
+			</div>
+			<div class="columnc">
+
+				<div class="tab">
+				  <button class="tablinks" onclick="openTab(event, 'Facebook')" id="defaultOpen">Facebook</button>
+				  <button class="tablinks" onclick="openTab(event, 'Instagram')">Instagram</button>
+				  <button class="tablinks" onclick="openTab(event, 'Twitter')">Twitter</button>
+					<button class="tablinks" onclick="openTab(event, 'Reddit')">Reddit</button>
+				</div>
+
+				<!-- Tab content -->
+				<div id="Facebook" class="tabcontent">
+				  <h3>Trending</h3>
+				  <p>Trending posts of relevant topic on Facebook</p>
+				</div>
+
+				<div id="Instagram" class="tabcontent">
+				  <h3>Trending</h3>
+				  <p>Trending posts of relevant topic on Instagram</p>
+				</div>
+
+				<div id="Twitter" class="tabcontent">
+				  <h3>Trending</h3>
+				  <p>Trending posts of relevant topic on Twitter</p>
+				</div>
+
+				<div id="Internet" class="tabcontent">
+				  <h3>Trending</h3>
+				  <p>Stuff on the Internet</p>
+				</div>
+
+				<div id="Reddit" class="tabcontent">
+					<h3>Trending posts on Reddit</h3>
+				</div>
+			</div>
+
+
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="../js/musicnav.js"></script>
+
+
+	</body>
+	<script>
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+	</html>
