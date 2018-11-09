@@ -1,0 +1,19 @@
+.container {
+		float: left;
+		width: 75%;
+		padding: 10px;
+		height: 30px;
+		text-align: center;
+}
+
+.innercontainer {
+  margin-left: 50%;
+  float:left;
+  padding: 10px;
+  align-items:center;
+}
+
+#loadmorebutton{
+  margin-left: 50%;
+  float: left;
+}
