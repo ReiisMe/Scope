@@ -84,16 +84,6 @@ div.container {
 		clear: both;
 }
 
-#Top10 {
-	border: 1px solid black;
-}
-#searchList {
-	border: 1px solid black;
-}
-#SocialTab {
-	border: 1px solid black;
-}
-
 td{
 	text-align: left;
 	padding: 5px;
@@ -106,41 +96,6 @@ th{
 * {
   box-sizing: border-box;
 }
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 12px;
-  padding: 12px 20px 12px 20px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block;
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-
-
-/* CSS codes for the social media section e.g. the tabs */
 
 /* Style the tab */
 .tab {
@@ -195,4 +150,8 @@ th{
 /* Add a background color on hover */
 .btn-group button:hover {
     background-color: #3e8e41;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
