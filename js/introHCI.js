@@ -8,7 +8,7 @@ window.onload = function () {
   vm.username = getParam().username;
   console.log(vm.username);
   if(username!=undefined){
-  	document.getElementById("login-btn").innerHTML=username;  
+  	document.getElementById("login-btn").innerHTML=username;
   }
 
 }
@@ -45,7 +45,7 @@ function changeText(event) {
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("navigation-bar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -57,4 +57,13 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+function getPost(){
+	$('#loadmorebutton').remove();
+  $('#p').remove();
+	$('#innercontainer').append('<div class="d-inline-block p-3"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fapplemusic%2Fposts%2F2656644727684561%3A0&width=500" width="500" height="632" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>');
+	$('#innercontainer').append('<div class="d-inline-block p-3"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fapplemusic%2Fposts%2F2656644727684561%3A0&width=500" width="500" height="632" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>');
+	$('#innercontainer').append('<div class="d-inline-block p-3"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fapplemusic%2Fposts%2F2656644727684561%3A0&width=500" width="500" height="632" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>');
+	$('#innercontainer').append('<div class="p-3" id="loadmorebutton"><p><button class="btn btn-outline-primary btn-lg" onclick="getPost()" id="loadmorebutton">See More</button></p></div>');
 }

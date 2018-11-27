@@ -7,48 +7,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/introHCI.css" rel="stylesheet">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</head>
-	<!-- this is a comment in HTML -->
-
+	<link href="css/styling.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/fashionnav.js"></script>
 </head>
 
 <body>
-
-	<div class="jumbotron text-center">
-			<h1>Scope.</h1>
-			<p>What would you like to scope?</p>
-			<center>
-				<a id="login-btn" href="html/login.html" class="btn btn-outline-warning btn-lg">Login</a>
-			</center>
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow" id="navigation-bar">
+		<h5 class="my-0 mr-md-auto font-weight-normal">SCOPE</h5>
+		<nav class="my-2 my-md-0 mr-md-3">
+		</nav>
+		<a class="btn btn-outline-primary" href="login.html">Login</a>
 	</div>
 
-	<!-- <div class="col-lg-1 col-centered"></div> -->
+	<div class="mx-auto p-4">
+		<div class="pr-4 w-15 h-25 d-inline-block" id="category-nav">
+			<a href="#"><p>Trending</p></a>
+			<a href="#"><p>Explore</p></a>
+			<a href="#"><p>Liked by Friends</p></a>
+		</div>
 
-	<div class="container">
-		<div class="row mx-auto">
-			<div class="col-sm-4 col-centered">
-					<a href="html/musicnav.html" class="btn btn-outline-primary btn-lg"><span class="glyphicon glyphicon-headphones"> </span> Music</a>
-			</div>
-
-			<div class="col-sm-4 col-centered">
-					<a href="html/fashionnav.html" class="btn btn-outline-primary btn-lg">Fashion</a>
-			</div>
-
-			<div class="col-sm-4 col-centered">
-					<a href="html/foodnav.html" class="btn btn-outline-primary btn-lg">Food</a>
+		<div class = "d-inline-block">
+			<div class="container" id="innercontainer">
+				<div class="d-inline-block p-3"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fapplemusic%2Fposts%2F2653891811293186%3A0&width=500" width="500" height="448" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>
+				<div class="d-inline-block p-3"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fapplemusic%2Fposts%2F2668735336475500&width=500" width="500" height="507" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>
+				<div class="d-inline-block p-3"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fapplemusic%2Fposts%2F2650988694916831%3A0&width=500" width="500" height="633" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>
+				<div class="p-3" id="loadmorebutton">
+					<p><button class="btn btn-outline-primary btn-lg" onclick="getPost()">Load More</button></p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-<!-- <footer> Made by Aye with Love </footer> -->
-
-
-  <!-- include JavaScript near the end of the HTML file -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/introHCI.js"></script>

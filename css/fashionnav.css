@@ -7,13 +7,13 @@
 }
 
 .innercontainer {
-  margin-left: 50%;
-  float:left;
-  padding: 10px;
+  margin: auto auto;
+  padding: 20px;
+	margin-top: 20px;
   align-items:center;
 }
 
 #loadmorebutton{
   margin-left: 50%;
-  float: left;
+  float:right;
 }
